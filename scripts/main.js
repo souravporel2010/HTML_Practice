@@ -1,5 +1,5 @@
 var url='https://reqres.in/api/products/4';
-var btn= document.getElementById('clicl');
+var btn= document.getElementById('click');
 
 btn.addEventListener('click',FetchData());
 
