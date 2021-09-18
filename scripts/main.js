@@ -1,7 +1,7 @@
 var url='https://reqres.in/api/products/4';
 var btn= document.getElementById('click');
 
-btn.addEventListener('click',FetchData());
+btn.addEventListener('click',FetchData);
 
 function FetchData() {
     var req= new XMLHttpRequest();
@@ -12,6 +12,7 @@ function FetchData() {
             GenerateHTML(req.responseText);
         }
     }
+    req.send();
 }
 
 function GenerateHTML(response) {
